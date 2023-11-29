@@ -1,51 +1,12 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React from "react";
 import Link from "next/link";
 import Logo from "../assets/text-logo2.svg";
 import GitHub from "../assets/github-darkRed.svg";
 import LinkedIn from "../assets/linkedin-darkRed.svg";
 import Twitter from "../assets/twitter.svg";
 import Medium from "../assets/medium.svg";
-import classNames from "classnames";
-import { Drawer, DrawerHeader, DrawerTitle, DrawerContent } from "@rmwc/drawer";
-import { List } from "@rmwc/list";
-// import "@material/list/dist/mdc.list.min.css";
-// import "@material/drawer/dist/mdc.drawer.min.css";
-
-const StyledLogo = styled(Logo)`
-  height: 20px;
-`;
-const StyledDrawer = styled(Drawer)`
-  background-color: #ffffff;
-  top: 0;
-  bottom: 0;
-  z-index: 50;
-  height: 100vh;
-`;
-
-const StyledList = styled(List)`
-  && {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
-`;
 
 const Header = (props: any) => {
-  const [menuIconActive, setMenuIconActive] = useState(false);
-  const [open, setOpen] = useState(false);
-
-  function menu() {
-    setMenuIconActive(!menuIconActive);
-    drawerOpen();
-  }
-
-  function drawerOpen() {
-    setOpen(!open);
-  }
-
-  console.warn(props.isSticky, "is sticky");
-
   return (
     <header
       {...props}
@@ -57,7 +18,6 @@ const Header = (props: any) => {
         <Logo className="h-12 nav-logo svg-darkPrimary" />
       </Link>
       <ul className="invisible md:visible text-darkPrimary quicksand flex items-center text-center mr-10 font-semibold w-full">
-        {" "}
         <p
           role="link"
           onClick={() => props.onNav("projects")}
@@ -75,11 +35,6 @@ const Header = (props: any) => {
             About
           </li>
         </p>
-        <Link href="/blog">
-          <li className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
-            Blog
-          </li>
-        </Link>{" "}
         <a
           onClick={() => props.onNav("contact")}
           className="hover:text-midPrimary cursor-pointer"
@@ -87,73 +42,9 @@ const Header = (props: any) => {
           <li className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
             Contact
           </li>
-        </a>{" "}
+        </a>
       </ul>
-      <div className="flex-shrink-0 p-4 cursor-pointer" onClick={menu}>
-        <Link
-          id="nav-toggle"
-          href="#"
-          className={classNames("visible md:invisible", {
-            active: menuIconActive,
-          })}
-        >
-          <span></span>
-        </Link>
-      </div>
-      <StyledDrawer
-        className="z-10 h"
-        dir="ltr"
-        modal
-        open={open}
-        onClose={menu}
-      >
-        <DrawerHeader>
-          <DrawerTitle>
-            <Link href="/">
-              <Logo className="h-12 nav-logo svg-darkPrimary" />
-            </Link>
-          </DrawerTitle>
-        </DrawerHeader>
-        <DrawerContent>
-          <StyledList stlye={{ listStyle: "none" }}>
-            <a
-              onClick={() => props.onNav("about")}
-              className="hover:text-midPrimary cursor-pointer"
-            >
-              {" "}
-              <li className="text-darkPrimary nav-list-item  mr-6 p-1">
-                About
-              </li>
-            </a>
-            <a
-              onClick={() => props.onNav("projects")}
-              className="hover:text-midPrimary cursor-pointer"
-            >
-              <li className="text-darkPrimary nav-list-item mr-6 p-1">
-                Projects
-              </li>
-            </a>
-            <a href="/blog">
-              <li className="text-darkPrimary nav-list-item mr-6 p-1">Blog</li>
-            </a>{" "}
-            <a
-              onClick={() => props.onNav("contact")}
-              className="hover:text-midPrimary cursor-pointer"
-            >
-              <li className="text-darkPrimary nav-list-item mr-6 p-1">
-                Contact
-              </li>{" "}
-            </a>{" "}
-            {/* <Link className="hover:text-midPrimary cursor-pointer">
-              <li className="nav-list-item mr-6 p-1">
-                <a className="text-darkPrimary" href="#">
-                  Blog
-                </a>
-              </li>
-            </Link>{" "} */}
-          </StyledList>
-        </DrawerContent>
-      </StyledDrawer>
+
       <div className=" flex flex-row w-full justify-end invisible md:visible">
         <a
           href="https://github.com/izabellewilding"

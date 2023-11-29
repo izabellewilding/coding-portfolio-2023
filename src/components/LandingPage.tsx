@@ -1,5 +1,5 @@
 import React from "react";
-import SocialIcons from "../components/SocialIcons.tsx";
+// import SocialIcons from "../components/SocialIcons.tsx";
 // import SEO from "./seo"
 // import Splashes from "../components/Splashes.tsx";
 import Logo from "../assets/text-logo2.svg";
@@ -31,7 +31,7 @@ const LandingPage = React.forwardRef((props, ref) => {
             <p className="landing-subheading quicksand quicksand-letter-spacing text-xl md:text-3xl text-lightPrimary uppercase mb-5 md:mb-0 ">
               Frontend Developer
             </p>{" "}
-            <SocialIcons />
+            {/* <SocialIcons /> */}
           </div>
           {/* <ScrollButton
             linkto="about"
