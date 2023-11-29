@@ -34,7 +34,7 @@ const ProjectCard = ({ siteLink = "/", ...props }) => {
             {props.date}
           </div>
           <div className="font-bold text-3xl mb-6">{props.cardtitle}</div>
-          <ul className=" text-gray-400 text-lg list-disc p-4">
+          <ul className=" text-gray-50 text-lg list-disc p-4">
             <li> {props.listitem1}</li>
             <li> {props.listitem2}</li>
             <li> {props.listitem3}</li>

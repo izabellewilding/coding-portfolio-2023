@@ -4,23 +4,18 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = React.forwardRef((props, ref) => {
   return (
-    <main
-      ref={ref as any}
-      {...props}
-      className="w-full "
-      style={{ backgroundColor: "rgb(202 207 217 / 16%)" }}
-    >
+    <main ref={ref as any} {...props} className="w-full ">
       <div className="relative py-20 w-full min-h-screen max-w-screen-xl m-auto flex justify-center items-center">
         <div className="header-offset"></div>
         <div className="inline-block pb-16 w-full p-4 md:p-10">
           <h1
-            className="quicksand uppercase text-md font-semibold"
+            className="quicksand uppercase text-md font-semibold text-blue-950"
             style={{ letterSpacing: 3 }}
           >
             Selected Work
           </h1>
           <h2
-            className="DM-sans text-5xl font-semibold"
+            className="DM-sans text-5xl font-semibold text-blue-950"
             style={{ paddingBottom: "10vh" }}
           >
             Take a Look

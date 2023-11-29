@@ -18,8 +18,8 @@ const IndexPage: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (aboutRef.current) {
-        setSticky(aboutRef.current.getBoundingClientRect().top <= 80);
+      if (projectsRef.current) {
+        setSticky(projectsRef.current.getBoundingClientRect().top <= 80);
       }
     };
 
@@ -50,8 +50,8 @@ const IndexPage: React.FC = () => {
       <Header sticky={isSticky} onNav={handleHeaderNavigation} />
       <LandingPage ref={landingRef} />
       <div className="relative bg-white z-20">
-        <About ref={aboutRef} navitem="about" id="about" />
-        <Projects ref={projectsRef} />
+        {/* <About ref={aboutRef} navitem="about" id="about" /> */}
+        <Projects ref={projectsRef} id="projects" />
         <Contact ref={contactRef} />
       </div>
     </Layout>

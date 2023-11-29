@@ -1,6 +1,6 @@
 import React from "react";
 // import Bird from "../assets/bird-green.svg";
-// import { ScrollButton, NavigationButton, TextButton } from "./Buttons"
+import { ScrollButton, NavigationButton, TextButton } from "./Buttons";
 // import Img from "./image"
 
 interface AboutProps {
@@ -41,14 +41,14 @@ const About = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
               encorporating into UI work were possible.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 mx-20 col-gap-8 mt-6">
-              {/* <ScrollButton
+              <ScrollButton
                 linkto="projects"
                 content={<TextButton text="Projects" />}
               />
               <NavigationButton
                 linkto="/blog"
                 content={<TextButton text="Blog" />}
-              /> */}
+              />
             </div>
           </div>
         </div>

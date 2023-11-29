@@ -31,10 +31,9 @@ const LandingPage = React.forwardRef((props, ref) => {
             <p className="landing-subheading quicksand quicksand-letter-spacing text-xl md:text-2xl text-lightPrimary uppercase mb-5 md:mb-0 ">
               Creative Frontend Developer
             </p>
-            {/* <SocialIcons /> */}
           </div>
           <ScrollButton
-            linkto="about"
+            linkto="projects"
             content={
               <div className="flex justify-center md:mt-12">
                 {<Arrow className="h-12 bounce" />}
