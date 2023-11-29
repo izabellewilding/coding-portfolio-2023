@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-// import FloatingIcons from "./FloatingTechIcons";
+import FloatingIcons from "./FloatingTechIcons";
 // import "@material/icon-button/dist/mdc.icon-button.min.css";
 // import "@material/icon-button/dist/mdc.icon-button.css";
 // import "@rmwc/icon/icon.css";
@@ -123,22 +123,20 @@ class ContactForm extends React.Component {
   }
 }
 
-const Contact = React.forwardRef((props, ref, navlink) => {
+const Contact = React.forwardRef((props, ref) => {
   return (
     <footer
       ref={ref}
       className="relative bg-darkPrimary pt-12 pb-12 overflow-hidden z-10"
     >
-      {/* <FloatingIcons /> */}
+      <FloatingIcons />
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 text-light"
         style={{ height: "80px", transform: "translateZ(0)" }}
-      ></div>
+      />
       <div className="container mx-auto px-4">
-        {" "}
         <div className="flex flex-wrap">
           <div className="w-full lg:w-1/3 px-4">
-            {" "}
             <h4 className="text-3xl font-semibold DM-sans text-lightPrimary mb-6">
               Get in touch
             </h4>

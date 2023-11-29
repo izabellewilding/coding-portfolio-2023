@@ -3,7 +3,11 @@ import React from "react";
 // import { ScrollButton, NavigationButton, TextButton } from "./Buttons"
 // import Img from "./image"
 
-const About = React.forwardRef((props, ref) => {
+interface AboutProps {
+  // id: string;
+}
+
+const About = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
   return (
     <div
       //a ref passed down from index.js for scroll into view functionality

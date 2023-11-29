@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
+// import "rmwc/dist/styles";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import About from "../components/About";
@@ -46,10 +47,10 @@ const IndexPage: React.FC = () => {
 
   return (
     <Layout>
-      <Header isSticky={isSticky} onNav={handleHeaderNavigation} />
+      <Header sticky={isSticky} onNav={handleHeaderNavigation} />
       <LandingPage ref={landingRef} />
       <div className="relative bg-white z-20">
-        <About ref={aboutRef} />
+        <About ref={aboutRef} navitem="about" id="about" />
         <Projects ref={projectsRef} />
         <Contact ref={contactRef} />
       </div>

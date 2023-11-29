@@ -6,43 +6,43 @@ import LinkedIn from "../assets/linkedin-darkRed.svg";
 import Twitter from "../assets/twitter.svg";
 import Medium from "../assets/medium.svg";
 
-const Header = (props: any) => {
+const Header = ({ sticky, onNav }: any) => {
   return (
     <header
-      {...props}
+      // {...props}
       className={`${
-        props.isSticky ? "nav-active shadow z-40" : "nav-hidden shadow z-40"
+        sticky ? "nav-active shadow z-40" : "nav-hidden shadow z-40"
       }`}
     >
       <Link href="/" className="flex-shrink-0 p-4 cursor-pointer">
         <Logo className="h-12 nav-logo svg-darkPrimary" />
       </Link>
       <ul className="invisible md:visible text-darkPrimary quicksand flex items-center text-center mr-10 font-semibold w-full">
-        <p
+        <li
           role="link"
-          onClick={() => props.onNav("projects")}
+          onClick={() => onNav("projects")}
           className="hover:text-midPrimary cursor-pointer"
         >
-          <li className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
+          <p className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
             Projects
-          </li>
-        </p>
-        <p
-          onClick={() => props.onNav("about")}
+          </p>
+        </li>
+        <li
+          onClick={() => onNav("about")}
           className="hover:text-midPrimary cursor-pointer"
         >
-          <li className="text-darkPrimary nav-list-item  hover-textLight custom-underline mr-6 p-1 quicksand">
+          <p className="text-darkPrimary nav-list-item  hover-textLight custom-underline mr-6 p-1 quicksand">
             About
-          </li>
-        </p>
-        <a
-          onClick={() => props.onNav("contact")}
+          </p>
+        </li>
+        <li
+          onClick={() => onNav("contact")}
           className="hover:text-midPrimary cursor-pointer"
         >
-          <li className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
+          <p className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
             Contact
-          </li>
-        </a>
+          </p>
+        </li>
       </ul>
 
       <div className=" flex flex-row w-full justify-end invisible md:visible">

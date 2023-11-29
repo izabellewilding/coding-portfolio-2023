@@ -14,9 +14,11 @@
     "@rmwc/drawer": "^14.0.2",
     "@rmwc/list": "^14.0.2",
     "@svgr/webpack": "^8.1.0",
+    "@types/react-scroll": "^1.8.10",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-scroll": "^1.9.0",
     "sass": "^1.69.5",
     "styled-components": "^6.1.1"
   },
