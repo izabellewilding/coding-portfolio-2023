@@ -1,10 +1,8 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
-// import "rmwc/dist/styles";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
-import About from "../components/About";
 import LandingPage from "../components/LandingPage";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
@@ -12,7 +10,6 @@ import Contact from "../components/Contact";
 const IndexPage: React.FC = () => {
   const [isSticky, setSticky] = useState(false);
   const landingRef = useRef<HTMLDivElement>(null);
-  const aboutRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
@@ -38,8 +35,6 @@ const IndexPage: React.FC = () => {
         behavior: "smooth",
         block: "start",
       });
-    } else if (navitem === "about" && aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     } else if (navitem === "contact" && contactRef.current) {
       contactRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -50,7 +45,6 @@ const IndexPage: React.FC = () => {
       <Header sticky={isSticky} onNav={handleHeaderNavigation} />
       <LandingPage ref={landingRef} />
       <div className="relative bg-white z-20">
-        {/* <About ref={aboutRef} navitem="about" id="about" /> */}
         <Projects ref={projectsRef} id="projects" />
         <Contact ref={contactRef} />
       </div>

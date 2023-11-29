@@ -28,14 +28,6 @@ const Header = ({ sticky, onNav }: any) => {
           </p>
         </li>
         <li
-          onClick={() => onNav("about")}
-          className="hover:text-midPrimary cursor-pointer"
-        >
-          <p className="text-darkPrimary nav-list-item  hover-textLight custom-underline mr-6 p-1 quicksand">
-            About
-          </p>
-        </li>
-        <li
           onClick={() => onNav("contact")}
           className="hover:text-midPrimary cursor-pointer"
         >

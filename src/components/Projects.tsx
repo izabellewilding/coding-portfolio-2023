@@ -2,11 +2,11 @@ import React from "react";
 import "../styles/all.scss";
 import ProjectCard from "./ProjectCard";
 
-const Projects = React.forwardRef((props, ref) => {
+const Projects = React.forwardRef<any, any>((props, ref) => {
   return (
     <main ref={ref as any} {...props} className="w-full ">
       <div className="relative py-20 w-full min-h-screen max-w-screen-xl m-auto flex justify-center items-center">
-        <div className="header-offset"></div>
+        <div className="header-offset" />
         <div className="inline-block pb-16 w-full p-4 md:p-10">
           <h1
             className="quicksand uppercase text-md font-semibold text-blue-950"
@@ -26,7 +26,7 @@ const Projects = React.forwardRef((props, ref) => {
               backgroundcolor="rgb(167 8 138)"
               cardtitle="Memory Card Game"
               gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
-              sitelink="https://kerve-test.netlify.app/"
+              sitelink="https://cool-vacherin-fe385b.netlify.app/"
               listitem1="An interactive card game built using React"
               listitem2="React Spring animations for card flip"
               listitem3="Game logic in a single Zustand store for clarity"
