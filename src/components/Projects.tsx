@@ -22,6 +22,16 @@ const Projects = React.forwardRef((props, ref) => {
           </h2>
           <section className="w-full grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10 justify-between">
             <ProjectCard
+              date="May 2022"
+              backgroundcolor="rgb(167 8 138)"
+              cardtitle="Memory Card Game"
+              gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
+              sitelink="https://kerve-test.netlify.app/"
+              listitem1="An interactive card game built using React"
+              listitem2="React Spring animations for card flip"
+              listitem3="Game logic in a single Zustand store for clarity"
+            />
+            <ProjectCard
               date="November 2021"
               backgroundcolor="rgb(86 141 163)"
               cardtitle="Generative Art Node CLI tool"
@@ -74,16 +84,7 @@ const Projects = React.forwardRef((props, ref) => {
               listitem2="Responsive to 4 key brekpoints (small mobile to large screen)"
               listitem3="JavaScript and CSS animations"
             />
-            <ProjectCard
-              date="August 2020"
-              backgroundcolor="rgb(0 192 199)"
-              cardtitle="Simple Memory Card Game"
-              gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
-              sitelink="https://kerve-test.netlify.app/"
-              listitem1="An interactive card game built using React"
-              listitem2="React Spring animations for card flip"
-              listitem3="Game logic in a single Zustand store for clarity"
-            />
+
             {/* <ProjectCard
               date="March - April 2020"
               cardtitle="Small Business Website"

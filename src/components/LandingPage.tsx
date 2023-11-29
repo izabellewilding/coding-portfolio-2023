@@ -1,10 +1,10 @@
 import React from "react";
-// import SocialIcons from "../components/SocialIcons.tsx";
-// import SEO from "./seo"
 import Splashes from "./Splashes";
 import Logo from "../assets/text-logo2.svg";
 import Arrow from "../assets/arrow4-black.svg";
 import { ScrollButton } from "./Buttons";
+// import SocialIcons from "../components/SocialIcons.tsx";
+// import SEO from "./seo"
 
 const LandingPage = React.forwardRef((props, ref) => {
   return (
@@ -28,7 +28,7 @@ const LandingPage = React.forwardRef((props, ref) => {
             <h1 className="relative DM-sans text-4xl md:text-6xl text-darkPrimary uppercase leading-none md:mb-3">
               Izabelle Wilding
             </h1>
-            <p className="landing-subheading quicksand quicksand-letter-spacing text-xl md:text-2xl text-lightPrimary uppercase mb-5 md:mb-0 ">
+            <p className="landing-subheading quicksand quicksand-letter-spacing text-md md:text-2xl text-lightPrimary uppercase mb-5 md:mb-0 ">
               Creative Frontend Developer
             </p>
           </div>
