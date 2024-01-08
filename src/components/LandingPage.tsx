@@ -22,10 +22,9 @@ const LandingPage = React.forwardRef((props, ref) => {
         <div className="relative h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div style={{ maxWidth: "580px" }} className="inline-block">
             <h1 className="mb-2 relative DM-sans text-3xl md:text-6xl text-darkPrimary leading-none md:mb-3 whitespace-nowrap">
-              Hi, I&apos;m
-              <span className="text-teal-100"> Izabelle Wilding</span>
+              <span className=""> Izabelle Wilding</span>
             </h1>
-            <h1 className="mb-3 relative DM-sans text-3xl md:text-6xl text-darkPrimary leading-none md:mb-3 whitespace-nowrap">
+            <h1 className="mb-3 text-teal-100 relative DM-sans text-3xl md:text-6xl y leading-none md:mb-3 whitespace-nowrap">
               Frontend Developer
             </h1>
           </div>
