@@ -23,19 +23,11 @@ const LandingPage = React.forwardRef((props, ref) => {
           <div style={{ maxWidth: "580px" }} className="inline-block">
             <h1 className="mb-2 relative DM-sans text-3xl md:text-6xl text-darkPrimary leading-none md:mb-3 whitespace-nowrap">
               Hi, I&apos;m
-              <span className="text-teal-100">Izabelle Wilding</span>
+              <span className="text-teal-100"> Izabelle Wilding</span>
             </h1>
             <h1 className="mb-3 relative DM-sans text-3xl md:text-6xl text-darkPrimary leading-none md:mb-3 whitespace-nowrap">
               Frontend Developer
             </h1>
-            <p
-              style={{ color: "#37848bde" }}
-              className=" px-12 landing-subheading quicksand quicksand-letter-spacing text-xs md:text-base text-teal-900 mb-5 md:mb-0 tracking-normal m-auto"
-            >
-              I am passionate about crafting visually stunning Web and Mobile
-              applications that prioritize seamless user experiences, robust
-              scalability, and optimal performance.
-            </p>
           </div>
           <ScrollButton
             linkto="projects"
