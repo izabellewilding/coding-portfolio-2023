@@ -2,10 +2,8 @@ import React from "react";
 import Splashes from "./Splashes";
 import Logo from "../assets/text-logo2.svg";
 import Arrow from "../assets/arrow4-black.svg";
-import { ScrollButton } from "./Buttons";
-// import SocialIcons from "../components/SocialIcons.tsx";
-// import SEO from "./seo"
 import Image from "next/image";
+import { ScrollButton } from "./Buttons";
 import { outfit } from "../app/fonts";
 import DownArrow from "../assets/down-arrow2-svgrepo-com.svg";
 
@@ -14,7 +12,7 @@ const LandingPage = React.forwardRef((props, ref) => {
     <main
       {...props}
       ref={ref as any}
-      className=" w-full h-screen items-center justify-center"
+      className="w-full h-screen items-center justify-center"
       style={{ position: "sticky", top: "0" }}
     >
       <Image
@@ -23,7 +21,7 @@ const LandingPage = React.forwardRef((props, ref) => {
         layout="fill"
         objectFit="cover"
       />
-      <Logo className="absolute top-0 left-0 h-12 z-10 m-4" />
+      <Logo className="absolute top-0 left-0 h-12 z-10 m-4 svg-lightPrimary" />
       <div className="relative w-full h-screen" />
       <div className="absolute opacity-25 bottom-0 right-0 top-0 left-0" />
       <div className=" w-full h-full absolute bottom-0 right-0 top-0 left-0 flex">
@@ -31,15 +29,15 @@ const LandingPage = React.forwardRef((props, ref) => {
         <div className="ml-6 relative justify-center h-full w-full flex flex-col px-4 ">
           {/* <div className="inline-block"> */}
           <h1
-            style={{ color: "#b1a8ea", fontSize: "100px" }}
-            className="mb-2 uppercase relative text-3xl leading-none md:mb-3"
+            style={{ color: "#b1a8ea" }}
+            className="mb-2 uppercase relative leading-none md:mb-3 landing-title"
           >
             Izabelle Wilding
           </h1>
           <h1
-            className={`mb-3 relative text-2xl md:text-3xl leading-none md:mb-3 whitespace-nowrap ${outfit.className}`}
+            className={`mb-3 relative text-2xl md:text-3xl leading-none md:mb-3 ${outfit.className}`}
           >
-            Software Engineer - UX Specialist -
+            Software Engineer - UI/UX Specialist
           </h1>
         </div>
       </div>

@@ -169,3 +169,10 @@
   height: 711px;
   fill: #0000000d;
 }
+
+.landing-title {
+  font-size: 65px;
+  @media (min-width: 500px) {
+    font-size: 100px;
+  }
+}

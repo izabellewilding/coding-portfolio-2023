@@ -15,7 +15,7 @@ const Header = ({ sticky, onNav }: any) => {
       }`}
     >
       <Link href="/" className="flex-shrink-0 p-4 cursor-pointer">
-        <Logo className="h-12 nav-logo svg-darkPrimary" />
+        <Logo className="h-12 nav-logo svg-midPrimary" />
       </Link>
       <ul className="invisible md:visible text-darkPrimary quicksand flex items-center text-center mr-10 w-full">
         <li
