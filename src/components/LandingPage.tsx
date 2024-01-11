@@ -21,21 +21,17 @@ const LandingPage = React.forwardRef((props, ref) => {
         layout="fill"
         objectFit="cover"
       />
-      <Logo className="absolute top-0 left-0 h-12 z-10 m-4 svg-lightPrimary" />
-      <div className="relative w-full h-screen" />
-      <div className="absolute opacity-25 bottom-0 right-0 top-0 left-0" />
-      <div className=" w-full h-full absolute bottom-0 right-0 top-0 left-0 flex">
-        {/* <Splashes /> */}
-        <div className="ml-6 relative justify-center h-full w-full flex flex-col px-4 ">
-          {/* <div className="inline-block"> */}
+      {/* <Logo className=" ml-8 absolute top-0 left-0 h-12 z-10 m-4 svg-midPrimary" /> */}
+      <div className=" ml-8 w-full h-full absolute bottom-0 right-0 top-0 left-0 flex">
+        <div className=" relative justify-center h-full w-full flex flex-col ">
           <h1
             style={{ color: "#b1a8ea" }}
-            className="mb-2 uppercase relative leading-none md:mb-3 landing-title"
+            className={`mb-2 uppercase relative leading-none md:mb-3 landing-title font-extralight ${outfit.className}`}
           >
             Izabelle Wilding
           </h1>
           <h1
-            className={`mb-3 relative text-2xl md:text-3xl leading-none md:mb-3 ${outfit.className}`}
+            className={`mb-3 relative text-xl sm:text-3xl leading-none md:mb-3 ml-3 font-extralight ${outfit.className}`}
           >
             Software Engineer - UI/UX Specialist
           </h1>

@@ -15,29 +15,29 @@ const Header = ({ sticky, onNav }: any) => {
       }`}
     >
       <Link href="/" className="flex-shrink-0 p-4 cursor-pointer">
-        <Logo className="h-12 nav-logo svg-midPrimary" />
+        <Logo className="h-12 nav-logo svg-lightPrimary" />
       </Link>
-      <ul className="invisible md:visible text-darkPrimary quicksand flex items-center text-center mr-10 w-full">
+      <ul className="text-md uppercase invisible md:visible text-lightPrimary quicksand flex items-center text-center mr-10 w-full">
         <li
           role="link"
           onClick={() => onNav("projects")}
-          className="hover:text-midPrimary cursor-pointer"
+          className="hover:text-lightPrimary cursor-pointer"
         >
-          <p className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
+          <p className=" av-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
             Projects
           </p>
         </li>
         <li
           onClick={() => onNav("contact")}
-          className="hover:text-midPrimary cursor-pointer"
+          className="hover:text-lightPrimary cursor-pointer"
         >
-          <p className="text-darkPrimary nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
+          <p className="nav-list-item hover-textLight custom-underline mr-6 p-1 quicksand">
             Contact
           </p>
         </li>
       </ul>
 
-      <div className=" flex flex-row w-full justify-end invisible md:visible">
+      <div className="flex flex-row w-full justify-end invisible md:visible">
         <a
           href="https://github.com/izabellewilding"
           target="_blank"

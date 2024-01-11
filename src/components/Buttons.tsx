@@ -3,7 +3,6 @@ import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 
 export const ScrollButton = (props: any) => {
-  console.warn(props.linkto);
   return (
     <ScrollLink
       to={props.linkto}
