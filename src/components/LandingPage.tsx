@@ -1,7 +1,4 @@
 import React from "react";
-import Splashes from "./Splashes";
-import Logo from "../assets/text-logo2.svg";
-import Arrow from "../assets/arrow4-black.svg";
 import Image from "next/image";
 import { ScrollButton } from "./Buttons";
 import { outfit } from "../app/fonts";

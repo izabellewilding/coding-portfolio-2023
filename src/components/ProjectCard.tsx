@@ -1,6 +1,7 @@
 import React from "react";
 import Github from "../assets/github-darkRed.svg";
 import Home from "../assets/add_to_home_screen-24px.svg";
+import Image from "next/image";
 
 const LinkButton = ({ icon, href = "/", label }: any) => {
   return (
@@ -21,7 +22,7 @@ const ProjectCard = ({ siteLink = "/", ...props }) => {
   return (
     <div
       {...props}
-      className=" shadow-lg DM-sans w-full max-w-screen relative min-w-full h-full "
+      className="project-card shadow-lg DM-sans w-full max-w-screen relative min-w-full h-full"
     >
       <section
         className="relative bg-gray-800 text-white p-5 h-full lg:p-10 flex flex-col md:justify-between "
@@ -54,14 +55,16 @@ const ProjectCard = ({ siteLink = "/", ...props }) => {
             label="Source Code"
           />
         </section>
-        {/* <section className="project-image-wrapper h-1/2">
-          <Img
-            src={props.cardimage} // pauseRef={pause => this.pauseGif = pause}
-            className="project-image"
-          />{" "}
-        </section> */}
       </section>{" "}
-      {/* <div className="h-1/2 "></div>{" "} */}
+      <section className="project-image-wrapper  rounded-md">
+        <Image
+          src={props.cardImage}
+          alt="Project image"
+          className="project-image rounded-md"
+          layout="fill"
+          objectFit="cover"
+        />
+      </section>
     </div>
   );
 };

@@ -22,8 +22,30 @@ const Projects = React.forwardRef<any, any>((props, ref) => {
           </h2>
           <section className="w-full grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10 justify-between">
             <ProjectCard
+              date="April - July 2020"
+              // cardimage="../images/pottery-ecommerce.JPG"
+              backgroundcolor="#000344"
+              cardtitle="eCommerce - Using Stripe and Gatsby"
+              gitlink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
+              sitelink="https://pottery-ecommerce.netlify.app/"
+              listitem1="Stripe Checkout redirect for secure payments"
+              listitem2="Loads Stripe products from Stripe API at build time using SSG"
+              listitem3="Custom built shopping cart built with React Context provider"
+              cardImage="/assets/pottery-ecommerce.png"
+            />
+            <ProjectCard
+              date="November 2021"
+              backgroundcolor="#2249c2"
+              cardtitle="Generative Art Node CLI tool"
+              gitlink="https://github.com/izabellewilding/avatar-generator"
+              listitem1="Custom built node CLI tool"
+              listitem2="Generates avatars from a comnination of random SVG assets"
+              listitem3="Made as part of an NFT project"
+              cardImage="/assets/avatars.png"
+            />
+            <ProjectCard
               date="May 2022"
-              backgroundcolor="rgb(167 8 138)"
+              backgroundcolor="#4c5de1"
               cardtitle="Memory Card Game"
               gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
               sitelink="https://cool-vacherin-fe385b.netlify.app/"
@@ -32,30 +54,19 @@ const Projects = React.forwardRef<any, any>((props, ref) => {
               listitem3="Game logic in a single Zustand store for clarity"
             />
             <ProjectCard
-              date="November 2021"
-              backgroundcolor="rgb(86 141 163)"
-              cardtitle="Generative Art Node CLI tool"
-              gitlink="https://github.com/izabellewilding/avatar-generator"
-              listitem1="Custom built node CLI tool"
-              listitem2="Generates any number of avatar images from a set of SVGs"
-              listitem3="Made as part of an NFT project"
+              date="August 2020"
+              backgroundcolor="#000344"
+              cardtitle="Technical Test for Kerve Creative (Bath)"
+              gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
+              sitelink="https://kerve-test.netlify.app/"
+              listitem1="Website built with flat HTML, SASS, and JavaScript"
+              listitem2="Responsive to 4 key brekpoints (small mobile to large screen)"
+              listitem3="JavaScript and CSS animations"
             />
-            <ProjectCard
-              date="April - July 2020"
-              cardimage="../images/pottery-ecommerce.JPG"
-              backgroundcolor="#c61ee9"
-              cardtitle="eCommerce - Using Stripe and Gatsby"
-              gitlink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
-              sitelink="https://pottery-ecommerce.netlify.app/"
-              listitem1="Stripe Checkout redirect for secure payments"
-              listitem2="Loads Stripe products from Stripe API at build time using SSG"
-              listitem3="Custom built shopping cart built with React Context provider"
-            />
-
             <ProjectCard
               date="July 2020"
-              backgroundcolor="#643ede"
-              cardimage="../images/todo-app.JPG"
+              backgroundcolor="#000344"
+              // cardimage="../images/todo-app.JPG"
               cardtitle="Tdolist - Todo app built with React Hooks"
               gitlink="https://github.com/izabellewilding/react-todo-app"
               sitelink="https://tdolist.netlify.app/"
@@ -66,23 +77,13 @@ const Projects = React.forwardRef<any, any>((props, ref) => {
 
             <ProjectCard
               date="July 2020"
+              backgroundcolor="#643ede"
               cardtitle="React Hooks Registration Form"
-              backgroundcolor="hsl(229deg 24% 22%)"
               sitelink="https://react-registration-form.netlify.app/"
               gitlink="https://github.com/izabellewilding/registration-form"
               listitem1="Follows HMTL and accessibility best practices with password and email validation"
               listitem2="CSS-in-JS styled-component styling"
               listitem3="Unit testing with React-Testing Library"
-            />
-            <ProjectCard
-              date="August 2020"
-              backgroundcolor="rgb(198 30 233)"
-              cardtitle="Technical Test for Kerve Creative (Bath)"
-              gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
-              sitelink="https://kerve-test.netlify.app/"
-              listitem1="Website built with flat HTML, SASS, and JavaScript"
-              listitem2="Responsive to 4 key brekpoints (small mobile to large screen)"
-              listitem3="JavaScript and CSS animations"
             />
 
             {/* <ProjectCard
