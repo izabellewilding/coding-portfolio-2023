@@ -28,30 +28,31 @@ const Projects = React.forwardRef<any, any>((props, ref) => {
               cardtitle="eCommerce - Using Stripe and Gatsby"
               gitlink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
               sitelink="https://pottery-ecommerce.netlify.app/"
-              listitem1="Stripe Checkout redirect for secure payments"
-              listitem2="Loads Stripe products from Stripe API at build time using SSG"
-              listitem3="Custom built shopping cart built with React Context provider"
-              cardImage="/assets/pottery-ecommerce.png"
+              listitem1="Stripe Checkout redirect for secure payments."
+              listitem2="Loads Stripe products from Stripe API at build time using SSG."
+              listitem3="Custom built shopping cart built with React Context provider."
+              cardImage="/assets/pottery-ecommerce-homepage.png"
             />
             <ProjectCard
               date="November 2021"
               backgroundcolor="#2249c2"
               cardtitle="Generative Art Node CLI tool"
               gitlink="https://github.com/izabellewilding/avatar-generator"
-              listitem1="Custom built node CLI tool"
-              listitem2="Generates avatars from a comnination of random SVG assets"
-              listitem3="Made as part of an NFT project"
+              listitem1="Custom built node CLI tool."
+              listitem2="Generates avatars from a comnination of random SVG assets."
+              listitem3="Made as part of an NFT project."
               cardImage="/assets/avatars.png"
             />
             <ProjectCard
               date="May 2022"
               backgroundcolor="#4c5de1"
               cardtitle="Memory Card Game"
-              gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
+              gitlink="https://github.com/izabellewilding/memory-card-game-react"
               sitelink="https://cool-vacherin-fe385b.netlify.app/"
-              listitem1="An interactive card game built using React"
-              listitem2="React Spring animations for card flip"
-              listitem3="Game logic in a single Zustand store for clarity"
+              listitem1="An interactive card game built using React & Zustand"
+              listitem2="React Spring animations for card flip."
+              listitem3="Game logic in a single Zustand store."
+              cardImage="/assets/memory-card-game.png"
             />
             <ProjectCard
               date="August 2020"
@@ -59,9 +60,9 @@ const Projects = React.forwardRef<any, any>((props, ref) => {
               cardtitle="Technical Test for Kerve Creative (Bath)"
               gitlink="https://github.com/izabellewilding/Kerve-Test-Antiques"
               sitelink="https://kerve-test.netlify.app/"
-              listitem1="Website built with flat HTML, SASS, and JavaScript"
-              listitem2="Responsive to 4 key brekpoints (small mobile to large screen)"
-              listitem3="JavaScript and CSS animations"
+              listitem1="Website built with flat HTML, SASS, and JavaScript."
+              listitem2="Responsive to 4 key brekpoints (small mobile to large screen)."
+              listitem3="JavaScript and CSS animations."
             />
             <ProjectCard
               date="July 2020"
@@ -70,9 +71,9 @@ const Projects = React.forwardRef<any, any>((props, ref) => {
               cardtitle="Tdolist - Todo app built with React Hooks"
               gitlink="https://github.com/izabellewilding/react-todo-app"
               sitelink="https://tdolist.netlify.app/"
-              listitem1="Progressive Web App Configued (Works Offline)"
-              listitem2="Modern User Interface"
-              listitem3="Saves todos in browser storage"
+              listitem1="Progressive Web App Configued (Works Offline)."
+              listitem2="Modern User Interface."
+              listitem3="Saves todos in browser storage."
             />
 
             <ProjectCard
@@ -81,9 +82,9 @@ const Projects = React.forwardRef<any, any>((props, ref) => {
               cardtitle="React Hooks Registration Form"
               sitelink="https://react-registration-form.netlify.app/"
               gitlink="https://github.com/izabellewilding/registration-form"
-              listitem1="Follows HMTL and accessibility best practices with password and email validation"
-              listitem2="CSS-in-JS styled-component styling"
-              listitem3="Unit testing with React-Testing Library"
+              listitem1="Follows HMTL and accessibility best practices with password and email validation."
+              listitem2="CSS-in-JS styled-component styling."
+              listitem3="Unit testing with React-Testing Library."
             />
 
             {/* <ProjectCard

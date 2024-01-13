@@ -1,10 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import FloatingIcons from "./FloatingTechIcons";
-// import "@material/icon-button/dist/mdc.icon-button.min.css";
-// import "@material/icon-button/dist/mdc.icon-button.css";
-// import "@rmwc/icon/icon.css";
-// import "@material/ripple/dist/mdc.ripple.css";
 
 function encode(data) {
   return Object.keys(data)
@@ -127,7 +123,7 @@ const Contact = React.forwardRef((props, ref) => {
   return (
     <footer
       ref={ref}
-      className="relative bg-darkPrimary pt-12 pb-12 overflow-hidden z-10"
+      className="relative bg-black pt-12 pb-12 overflow-hidden z-10"
     >
       <FloatingIcons />
       <div

@@ -56,7 +56,7 @@ const ProjectCard = ({ siteLink = "/", ...props }) => {
           />
         </section>
       </section>{" "}
-      <section className="project-image-wrapper  rounded-md">
+      {/* <section className="project-image-wrapper rounded-md">
         <Image
           src={props.cardImage}
           alt="Project image"
@@ -64,7 +64,7 @@ const ProjectCard = ({ siteLink = "/", ...props }) => {
           layout="fill"
           objectFit="cover"
         />
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -19,7 +19,7 @@ const LandingPage = React.forwardRef((props, ref) => {
         objectFit="cover"
       />
       {/* <Logo className=" ml-8 absolute top-0 left-0 h-12 z-10 m-4 svg-midPrimary" /> */}
-      <div className=" ml-8 w-full h-full absolute bottom-0 right-0 top-0 left-0 flex">
+      <div className=" md:ml-8 w-full h-full absolute bottom-0 right-0 top-0 left-0 flex">
         <div className=" relative justify-center h-full w-full flex flex-col ">
           <h1
             style={{ color: "#b1a8ea" }}
@@ -28,7 +28,7 @@ const LandingPage = React.forwardRef((props, ref) => {
             Izabelle Wilding
           </h1>
           <h1
-            className={`mb-3 relative text-xl sm:text-3xl leading-none md:mb-3 ml-3 font-extralight ${outfit.className}`}
+            className={`mb-3 relative text-xl sm:text-3xl leading-none md:mb-3 ml-3 text-white ${outfit.className}`}
           >
             Software Engineer - UI/UX Specialist
           </h1>
