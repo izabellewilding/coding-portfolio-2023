@@ -22,6 +22,18 @@ const Projects = React.forwardRef<any, any>((props, ref) => {
           </h2>
           <section className="w-full grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10 justify-between">
             <ProjectCard
+              date="January 2024"
+              // cardimage="../images/pottery-ecommerce.JPG"
+              backgroundcolor="#3139c7"
+              cardtitle="Global Earthquake Data Dashboard - NextJS"
+              gitlink="https://github.com/izabellewilding/gatsby-stripe-ecommerce"
+              sitelink="https://usgs-earthquake-dashboard.netlify.app/"
+              listitem1="USGS API integration."
+              listitem2="Realtime data feed earthquakes across the world."
+              listitem3="Data visualisation with Chart.js charts."
+              cardImage="/assets/pottery-ecommerce-homepage.png"
+            />
+            <ProjectCard
               date="April - July 2020"
               // cardimage="../images/pottery-ecommerce.JPG"
               backgroundcolor="#000344"
