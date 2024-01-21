@@ -149,28 +149,26 @@
 }
 
 .project-image-wrapper {
+  display: flex;
+  justify-content: end;
   position: absolute !important;
   bottom: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
+  width: 225px;
+  height: 280px;
   opacity: 0;
   transform: translateY(100%);
-  // display: none;
   transition: all 1s;
-
-  // &:hover {
-  //   transform: translateY(0%);
-  // }
+  cursor: pointer;
 
   @media (min-width: 760px) {
-    width: 75%;
+    width: 350px;
   }
 }
 
 .project-image {
   position: initial !important;
-  height: 100%;
+  height: 50%;
   opacity: 0.95;
 }
 
