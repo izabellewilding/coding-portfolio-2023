@@ -13,8 +13,8 @@ const LandingPage = React.forwardRef((props, ref) => {
       className="w-full h-screen items-center justify-center px-5 md:px-12 lg:px-10 bg-white sm:py"
       style={{ position: "sticky", top: "0" }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full h-screen items-center justify-center  bg-white py-4 sm:py">
-        <div className="flex flex-col gap-3 h-full pt-20">
+      <div className="grid grid-cols-1 grid-rows-3 md:grid-rows-1 gap-3 md:grid-cols-2 w-full items-center justify-center  bg-white py-4 sm:py md:h-screen">
+        <div className="flex flex-col gap-3 h-full pt-16 md:pt-32 row-span-2 md:row-span-1 text-center md:text-left">
           <h1
             style={{ color: "#1c0c65", fontWeight: 300 }}
             className={`mb-2 uppercase leading-none md:mb-3 landing-title font-extralight ${outfit.className}`}
@@ -40,14 +40,17 @@ const LandingPage = React.forwardRef((props, ref) => {
           href="https://usgs-earthquake-dashboard.netlify.app/"
           // className="landing-image"
           target="_blank"
-          className="relative pt-20"
-          style={{ marginRight: "-190px" }}
+          className="relative md:pt-20 h-full md:h-1/2"
+          // style={{ marginRight: "-190px" }}
         >
           <Image
             alt="Image of a mobile phone screen"
             src={"/assets/device-mock-desktop.png"}
-            height={300}
-            width={950}
+            sizes="500px"
+            fill
+            style={{
+              objectFit: "contain",
+            }}
           />
         </Link>
       </div>
