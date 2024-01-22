@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ScrollButton } from "./Buttons";
 import { outfit } from "../app/fonts";
 import DownArrow from "../assets/down-arrow2-svgrepo-com.svg";
+import Link from "next/link";
 
 const LandingPage = React.forwardRef((props, ref) => {
   return (
@@ -20,28 +21,34 @@ const LandingPage = React.forwardRef((props, ref) => {
           Izabelle Wilding
         </h1>
         <h1
-          className={`mb-3 relative text-xl sm:text-2xl md:mb-3 ml-3 text-indigo-950 ${outfit.className}`}
+          className={`mb-3 relative text-xl sm:text-xl md:mb-3 ml-3 text-indigo-950 ${outfit.className}`}
         >
           Software Engineer - UI/UX Specialist
         </h1>
         <p
-          className={`mb-3 relative text-xl sm:text-md  md:mb-3 ml-3 font-extralight text-indigo-950 ${outfit.className}`}
+          className={`mb-3 relative text-md  md:mb-3 ml-3 font-extralight text-indigo-950 ${outfit.className}`}
         >
-          Hi, I'm Izabelle, a Software Engineer with a passion for all things
-          frontend. I specialise in component library development and UX
-          optimisation, and have a keen interest in delivering performance and
-          accessibility enhancements. Scroll to take a look at a selection of my
-          personal projects.
+          Hello, I'm Izabelle, a dedicated Software Engineer with a passion for
+          frontend development. My expertise lies in crafting component
+          libraries, optimizing user experiences, and implementing performance
+          and accessibility enhancements. Explore below to discover a curated
+          collection of my personal projects.
         </p>
       </div>
-      <div className="flex relative align-middle items-center h-full justify-center">
+      <Link
+        href="https://usgs-earthquake-dashboard.netlify.app/"
+        className="landing-image"
+        target="_blank"
+      >
         <Image
           alt="Image of a mobile phone screen"
           src={"/assets/device-mock-desktop.png"}
-          height={400}
-          width={700}
+          height={500}
+          width={950}
+          objectPosition="center"
+          // objectFit="cover"
         />
-      </div>
+      </Link>
       {/* <ScrollButton
         linkto="projects"
         content={

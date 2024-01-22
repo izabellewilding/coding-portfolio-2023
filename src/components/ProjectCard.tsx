@@ -84,7 +84,6 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           alt="Project image"
           className="project-image rounded-md"
           layout="fill"
-          objectFit="cover"
         />
       </Link>
     </div>
