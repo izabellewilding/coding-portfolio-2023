@@ -10,14 +10,12 @@ const Header = ({ sticky, onNav }: any) => {
   return (
     <header
       // {...props}
-      className={`${
-        sticky ? "nav-active shadow z-40" : "nav-hidden shadow z-40"
-      }`}
+      className="nav-active shadow z-40 bg-white p-2"
     >
-      <Link href="/" className="flex-shrink-0 p-4 cursor-pointer">
-        <Logo className="h-12 nav-logo svg-lightPrimary" />
-      </Link>
-      <ul className="text-md uppercase invisible md:visible text-lightPrimary quicksand flex items-center text-center mr-10 w-full">
+      {/* <Link href="/" className="flex-shrink-0 cursor-pointer">
+        <Logo className="h-12 nav-logo svg-darkPrimary shadow-lg" />
+      </Link> */}
+      {/* <ul className="text-sm uppercase invisible md:visible quicksand flex items-center text-center mr-10 w-full text-zinc-700">
         <li
           role="link"
           onClick={() => onNav("projects")}
@@ -35,9 +33,9 @@ const Header = ({ sticky, onNav }: any) => {
             Contact
           </p>
         </li>
-      </ul>
+      </ul> */}
 
-      <div className="flex flex-row w-full justify-end invisible md:visible">
+      <div className="flex flex-row w-full justify-end ">
         <a
           href="https://github.com/izabellewilding"
           target="_blank"

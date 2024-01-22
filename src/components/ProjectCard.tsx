@@ -14,7 +14,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ icon, href = "/", label }) => {
   return (
     <a
       href={href}
-      className="flex flex-row items-center text-sm  DM-sans text-white"
+      className="flex flex-row items-center text-sm text-white"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="view on Guthub"
@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
   return (
     <div
       {...props}
-      className="project-card shadow-lg DM-sans w-full max-w-screen relative min-w-full h-full"
+      className="project-card shadow-lg w-full max-w-screen relative min-w-full h-full"
     >
       <section
         className="relative bg-gray-800 text-white p-5 h-full lg:p-10 flex flex-col md:justify-between "
@@ -49,10 +49,8 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
         }}
       >
         <div>
-          <div className="quicksand quicksand-letter-spacing text-sm uppercase">
-            {props.date}
-          </div>
-          <div className="font-bold text-3xl mb-6">{props.cardtitle}</div>
+          <div className=" text-sm uppercase">{props.date}</div>
+          <div className=" text-3xl mb-6 font-light">{props.cardtitle}</div>
           <ul className="text-gray-300 text-md list-disc p-4">
             {props.listItems.map((item, index) => (
               <li key={index}>{item}</li>
@@ -83,7 +81,11 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           src={props.cardImage}
           alt="Project image"
           className="project-image rounded-md"
-          layout="fill"
+          sizes="500px"
+          fill
+          style={{
+            objectFit: "contain",
+          }}
         />
       </Link>
     </div>

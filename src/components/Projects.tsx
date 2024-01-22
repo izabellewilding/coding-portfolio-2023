@@ -102,13 +102,13 @@ const Projects: React.FC = React.forwardRef<any, any>((props, ref) => {
         <div className="header-offset" />
         <div className="inline-block pb-16 w-full p-4 md:p-10">
           <h1
-            className="quicksand uppercase text-md font-semibold text-blue-950"
+            className="uppercase text-md  text-blue-950"
             style={{ letterSpacing: 3 }}
           >
             Selected Work
           </h1>
           <h2
-            className="DM-sans text-5xl font-semibold text-blue-950"
+            className=" text-4xl text-blue-950"
             style={{ paddingBottom: "10vh" }}
           >
             Take a Look

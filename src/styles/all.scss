@@ -155,7 +155,6 @@
   bottom: 0;
   right: 0;
   width: 225px;
-  height: 280px;
   opacity: 0;
   transform: translateY(100%);
   transition: all 1s;
@@ -168,7 +167,7 @@
 
 .project-image {
   position: initial !important;
-  height: 50%;
+  height: 60%;
   opacity: 0.95;
 }
 
@@ -185,8 +184,4 @@
   @media (min-width: 500px) {
     font-size: 78px;
   }
-}
-
-.landing-image {
-  // margin-right: -200px;
 }

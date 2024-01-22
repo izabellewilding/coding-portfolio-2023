@@ -37,7 +37,7 @@ class ContactForm extends React.Component {
     return (
       <section className="section w-full p-4 sm:w-9/12 lg:w-1/2 m-auto md:m-0 my-4 shadow-md">
         <div className=" font-sans">
-          <h1 className="text-3xl font-semibold DM-sans text-lightPrimary mb-6 text-center underlined inline">
+          <h1 className="text-3xl  text-lightPrimary mb-6 text-center underlined inline">
             Contact
           </h1>
           <form
@@ -133,9 +133,7 @@ const Contact = React.forwardRef((props, ref) => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full lg:w-1/3 px-4">
-            <h4 className="text-3xl font-semibold DM-sans text-lightPrimary mb-6">
-              Get in touch
-            </h4>
+            <h4 className="text-3xl  text-lightPrimary mb-6">Get in touch</h4>
             <p className="text-gray-500">izabellewilding@gmail.com</p>
           </div>
           <div className="w-full lg:w-6/12 px-4 md:pt-0">

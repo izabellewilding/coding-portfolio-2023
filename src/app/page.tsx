@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Layout from "../components/Layout";
-// import Header from "../components/Header";
+import Header from "../components/Header";
 import LandingPage from "../components/LandingPage";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
@@ -42,7 +42,7 @@ const IndexPage: React.FC = () => {
 
   return (
     <Layout>
-      {/* <Header sticky={isSticky} onNav={handleHeaderNavigation} /> */}
+      <Header sticky={isSticky} onNav={handleHeaderNavigation} />
       <LandingPage ref={landingRef} />
       <div className="relative bg-white">
         <Projects ref={projectsRef} id="projects" />
