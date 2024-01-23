@@ -1,3 +1,27 @@
+p {
+  margin-bottom: 1.666rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+a {
+  // color: $midPrimary;
+}
+ol {
+  list-style: square;
+}
+aside {
+  display: unset;
+  height: 100vh;
+}
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
 .notSticky {
   transform: translateY(-79.9px);
   position: fixed;

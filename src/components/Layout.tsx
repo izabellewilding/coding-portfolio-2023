@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "../styles/bounce.scss";
-import "../styles/fonts.scss";
+// import "../styles/fonts.scss";
 import "../styles/imports.scss";
 import "../styles/all.scss";
 import "../styles/nav.scss";
