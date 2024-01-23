@@ -38,10 +38,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = (props) => {
   return (
-    <div
-      {...props}
-      className="project-card shadow-lg w-full max-w-screen relative min-w-full h-full"
-    >
+    <div className="project-card shadow-lg w-full max-w-screen relative min-w-full h-full">
       <section
         className="relative bg-gray-800 text-white p-5 h-full lg:p-10 flex flex-col md:justify-between "
         style={{
