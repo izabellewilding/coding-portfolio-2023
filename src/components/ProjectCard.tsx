@@ -20,7 +20,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ icon, href = "/", label }) => {
       aria-label="view on Guthub"
     >
       {icon}
-      <p className="mr-2">{label}</p>
+      <p className="">{label}</p>
     </a>
   );
 };
