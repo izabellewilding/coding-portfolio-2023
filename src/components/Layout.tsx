@@ -4,7 +4,6 @@ import "../styles/bounce.scss";
 import "../styles/fonts.scss";
 import "../styles/imports.scss";
 import "../styles/all.scss";
-import "../styles/mdc-drawer.css";
 import "../styles/nav.scss";
 import "../styles/social-icons.scss";
 
