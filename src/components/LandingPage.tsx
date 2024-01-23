@@ -30,8 +30,8 @@ const LandingPage = React.forwardRef((props, ref) => {
           <p
             className={`mb-3 relative text-md md:mb-3 font-extralight text-indigo-950 ${outfit.className}`}
           >
-            Hello, I'm Izabelle, a dedicated Software Engineer with a passion
-            for frontend development. My expertise lies in crafting component
+            Hello, I&apos;m Izabelle, a Software Engineer with a passion for
+            frontend development. My expertise lies in crafting component
             libraries, optimizing user experiences, and implementing performance
             and accessibility enhancements. Explore below to discover a curated
             collection of my personal projects.
