@@ -95,9 +95,9 @@ const projectsData = [
   },
 ];
 
-const Projects: React.FC = React.forwardRef<any, any>((props, ref) => {
+const Projects = React.forwardRef<any, any>((props, ref) => {
   return (
-    <main ref={ref as any} {...props} className="w-full bg-zinc-100 ">
+    <main ref={ref} className="w-full bg-zinc-100 ">
       <div className="relative py-20 w-full min-h-screen max-w-screen-xl m-auto flex justify-center items-center">
         <div className="header-offset" />
         <div className="inline-block pb-16 w-full p-4 md:p-10">

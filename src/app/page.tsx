@@ -44,8 +44,8 @@ const IndexPage: React.FC = () => {
     <Layout>
       <Header sticky={isSticky} onNav={handleHeaderNavigation} />
       <LandingPage ref={landingRef} />
-      <div className="relative bg-white">
-        <Projects ref={projectsRef} id="projects" />
+      <div className="relative bg-white z-20">
+        <Projects ref={projectsRef} />
         <Contact ref={contactRef} />
       </div>
     </Layout>

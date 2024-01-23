@@ -6,7 +6,7 @@ import LinkedIn from "../assets/linkedin-darkRed.svg";
 import Twitter from "../assets/twitter.svg";
 import Medium from "../assets/medium.svg";
 
-const Header = ({ sticky, onNav }: any) => {
+const Header = ({}: any) => {
   return (
     <header
       // {...props}
@@ -40,16 +40,16 @@ const Header = ({ sticky, onNav }: any) => {
           href="https://github.com/izabellewilding"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-lightPrimary flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          className=" flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
           type="button"
         >
-          <GitHub className="social-icon" />{" "}
+          <GitHub className="social-icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
           target="_blank"
           rel="noopener noreferrer"
-          className=" text-lightPrimary flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+          className=" flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
           type="button"
         >
           <LinkedIn className="social-icon" />
