@@ -58,13 +58,13 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           {props.sitelink && (
             <LinkButton
               href={props.sitelink}
-              icon={<Home className="button-icons svg-lightPrimary" />}
+              icon={<Home className="button-icons fill-white" />}
               label="View"
             />
           )}
           <LinkButton
             href={props.gitlink}
-            icon={<Github className="button-icons svg-lightPrimary" />}
+            icon={<Github className="button-icons fill-white" />}
             label="Source Code"
           />
         </section>

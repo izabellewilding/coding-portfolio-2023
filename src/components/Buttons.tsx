@@ -28,7 +28,7 @@ export const NavigationButton = ({ ...props }) => {
 
 export const TextButton = ({ ...props }) => {
   return (
-    <div className="p-3 rounded-full text-lightPrimary uppercase  text-lg bg-secondary button-hover ">
+    <div className="p-3 rounded-full text-lightPrimary uppercase  text-lg button-hover ">
       {props.text}
     </div>
   );

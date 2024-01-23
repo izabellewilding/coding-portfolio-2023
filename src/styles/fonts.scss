@@ -19,7 +19,7 @@ h2 {
   font-size: 1.25rem;
 }
 a {
-  color: $midPrimary;
+  // color: $midPrimary;
 }
 ol {
   list-style: square;
@@ -46,26 +46,6 @@ blockquote {
 
 .DM-sans {
   font-family: "DM-sans", sans-serif;
-}
-
-.text-darkPrimary {
-  color: $darkPrimary;
-}
-.text-midPrimary {
-  color: $midPrimary;
-}
-.text-lightPrimary {
-  color: $lightPrimary;
-}
-
-.svg-lightPrimary {
-  fill: $lightPrimary;
-}
-.svg-midPrimary {
-  fill: $midPrimary;
-}
-.svg-darkPrimary {
-  fill: $darkPrimary;
 }
 
 .quicksand-letter-spacing {

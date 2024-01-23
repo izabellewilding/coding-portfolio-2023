@@ -1,5 +1,3 @@
-@import "./colors.scss";
-
 .social-bar {
   width: 100%;
 }
@@ -27,7 +25,7 @@
     opacity: 0;
 
     transition: all 0.1s ease-in;
-    color: $lightPrimary;
+    // color: $lightPrimary;
     font-weight: bold;
     letter-spacing: 1px;
     font-family: quicksand;
@@ -37,7 +35,7 @@
     // &:active,
     &:focus {
     .social-icon {
-      fill: $lightPrimary;
+      // fill: $lightPrimary;
     }
     .icon-text {
       opacity: 1;

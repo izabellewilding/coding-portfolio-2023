@@ -105,7 +105,7 @@ class ContactForm extends React.Component {
             </div>
             <div className="field">
               <button
-                className="mt-2 h-12 gradient button w-full uppercase  text-darkPrimary rounded p-2 whitespace-no-wrap"
+                className="mt-2 h-12 gradient button w-full uppercase text-black text- rounded p-2 whitespace-no-wrap"
                 type="submit"
                 style={{ height: "3rem" }}
               >
